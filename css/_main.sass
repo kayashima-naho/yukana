@@ -9,7 +9,7 @@
         width: 1440px
         height: 928px
 
-    .sample__container
+    .top__container
         // position: absolute
         // top: 50%
         // left: 50%
@@ -55,9 +55,67 @@
 
     .content-container
         width: 1100px
-        margin: auto
+        margin: 10% auto
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
         &__title
             display: flex
-            justify-content: center
-            align-items: center
-            border-bottom: 4px dotted #1387D6
+            flex-direction: column
+            .sub
+                display: flex
+                // display: inline-block  要素に応じてラインの長さを変えたい
+                border-bottom: 4px solid #1387D6
+                justify-content: center
+                color: #1387D6
+                font-size: 20px
+                line-height: 100%
+                letter-spacing: 0.05em
+                padding-bottom: 19px
+                margin-bottom: 23px
+            .heading
+                font-weight: 700
+                font-size: 32px
+                line-height: 100%
+                /* identical to box height, or 32px */
+                letter-spacing: 0.05em
+                color: #333333
+                margin-bottom: 40px
+        .new
+            display:flex
+            .img
+                width: 510px
+                height: 510px
+                background-color: green
+                margin: 20px auto
+        &__outer
+            display: flex
+            justify-content: space-between
+            .box1
+                .box-img
+                    width: 514px
+                    height: 230px
+                .box-title
+                    font-weight: 700
+                    font-size: 18px
+                    line-height: 26px
+                    letter-spacing: 0.0075em
+                    color: #333333
+                .box-text
+                    font-size: 16px
+                    line-height: 30px
+                    /* or 188% */
+                    letter-spacing: 0.0075em
+
+
+
+    .day-detail
+        width: 1103px
+        height: 286px
+        background: rgba(19, 135, 214, 0.05)
+        border: 3px solid #1387D6
+        border-radius: 6px
+
+
+
