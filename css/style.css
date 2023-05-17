@@ -105,6 +105,16 @@
   font-weight: bold;
   margin-left: 20%;
 }
+.main .content-container {
+  width: 1100px;
+  margin: auto;
+}
+.main .content-container__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 4px dotted #1387D6;
+}
 
 * {
   margin: 0;
