@@ -61,9 +61,36 @@
   color: #82C810;
 }
 
+.main {
+  width: 100%;
+}
 .main__img {
+  background-image: url(../img/hoge.png);
+  background-position: center;
+  background-size: cover;
   width: 1440px;
   height: 928px;
+}
+.main .sample__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.main .catchcopy__title {
+  font-size: 50px;
+  color: #1387D6;
+  border-bottom: 4px dotted #1387D6;
+  font-weight: bold;
+  margin-bottom: 35px;
+  padding: 30px;
+}
+.main .catchcopy__text {
+  color: #1387D6;
+  font-size: 34px;
+  font-weight: bold;
 }
 
 * {
