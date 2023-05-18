@@ -137,6 +137,12 @@
   color: #333333;
   margin-bottom: 40px;
 }
+.main .content-container__title .heading .part {
+  color: #12BEF4;
+}
+.main .content-container .new {
+  display: flex;
+}
 .main .content-container .new .img {
   width: 510px;
   height: 510px;
@@ -146,6 +152,9 @@
 .main .content-container__outer {
   display: flex;
   justify-content: space-between;
+}
+.main .content-container__outer .box1 {
+  width: 526px;
 }
 .main .content-container__outer .box1 .box-img {
   width: 514px;
@@ -157,6 +166,7 @@
   line-height: 26px;
   letter-spacing: 0.0075em;
   color: #333333;
+  margin: 21px 10px 0 0;
 }
 .main .content-container__outer .box1 .box-text {
   font-size: 16px;
@@ -164,12 +174,91 @@
   /* or 188% */
   letter-spacing: 0.0075em;
 }
+.main .content-container__outer .box1 .button {
+  background: #12BEF4;
+  border-radius: 6px;
+  width: 515px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .content-container__outer .box1 .button .button-text {
+  width: 428px;
+  height: 45px;
+  color: #FFFFFF;
+  font-size: 22px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.main .content-container__outer .box2 {
+  width: 526px;
+  margin: 0 0 0 65px;
+}
+.main .content-container__outer .box2 .box-img {
+  width: 514px;
+  height: 230px;
+}
+.main .content-container__outer .box2 .box-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.0075em;
+  color: #333333;
+  margin: 21px 10px 0 0;
+}
+.main .content-container__outer .box2 .box-text {
+  font-size: 16px;
+  line-height: 30px;
+  /* or 188% */
+  letter-spacing: 0.0075em;
+}
+.main .content-container__outer .box2 .button {
+  background: #82C810;
+  border-radius: 6px;
+  width: 515px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .content-container__outer .box2 .button .button-text {
+  width: 428px;
+  height: 45px;
+  color: #FFFFFF;
+  font-size: 22px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 .main .day-detail {
   width: 1103px;
   height: 286px;
   background: rgba(19, 135, 214, 0.05);
   border: 3px solid #1387D6;
   border-radius: 6px;
+  margin: 0 auto;
+}
+.main .day-detail__title {
+  font-size: 30px;
+  line-height: 34px;
+  /* identical to box height, or 113% */
+  color: #1387D6;
+  text-align: center;
+  margin: 60px 0 30px 0;
+}
+.main .day-detail__text {
+  font-size: 18px;
+  line-height: 190%;
+  margin: 0 60px 60px 60px;
+}
+.main .background-color {
+  width: 1440px;
+  height: 985px;
+  background-color: #F7FCFF;
 }
 
 * {
