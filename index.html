@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>yukana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
         <div class="header__logo">
-          <img src="img/logo_v2 1.png" alt="logo">
+          <img src="img/logo.png" alt="logo">
         </div>
         <nav class="header__nav">
           <ul class="header__list list">
@@ -20,7 +21,7 @@
             <li class="list__item item list__item--recruit">
               <img
                 class="item__icon"
-                src="img/Group 808.png"
+                src="img/recruit.png"
                 alt="recruit icon"
               />
               採用情報
@@ -53,8 +54,9 @@
         </div>
         <div class="content-container">
             <div class="content-container__title">
-                <span class="sub">news</span>
-                <span class="heading">新着情報のお知らせ</span>
+                <p class="sub">news</p>
+                <div class="border"></div>
+                <h2 class="heading">新着情報のお知らせ</h2>
             </div>
             <div class="new">
                 <div class="img">イメージ図</div>
@@ -63,8 +65,9 @@
         </div>
         <div class="content-container">
             <div class="content-container__title">
-                <span class="sub">service</span>
-                <span class="heading">放課後等デイサービスのご紹介</span>
+                <p class="sub">service</p>
+                <div class="border"></div>
+                <h2 class="heading">放課後等デイサービスのご紹介</h2>
             </div>
             <div class="image-child">
                 <img
@@ -92,6 +95,7 @@
                     <div class="button">
                         <p class="button-text">
                             放課後等デイサービス あお の活動紹介
+                            <i class="fa-light fa-circle-play"></i>
                         </p>
 
                     </div>
@@ -105,6 +109,7 @@
                     <div class="button">
                         <p class="button-text">
                             放課後等デイサービス Sui の活動紹介
+                            <i class="fa-light fa-circle-play"></i>
                         </p>
                     </div>
                 </div>
@@ -119,11 +124,61 @@
                 対象児童は、小学生～高校生で各市町村が発行した通所受給者証を受給している児童になります。
             </div>
         </div>
-        <div class="background-color">
+        <div class="bg-color-skybule">
             <div class="content-container__title">
-                <h3 class="sub">price</h3>
+                <p class="sub">price</p>
+                <div class="border"></div>
                 <h2 class="heading">ご利用料金の目安</h2>
             </div>
+            <table border="1" cellpadding="6" cellspacing="0" width="1100" height="50">
+                <h4 class="caption">1.  月ごとの利用者負担には上限があります。</h4>
+                <thead>
+                    <tr>
+                        <th style="background:#1387D6">区分</th>
+                        <th style="background:#1387D6">世帯の収入状況</th>
+                        <th style="background:#1387D6">負担上限金</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="4">ご利用者負担の詳しい内容は
+                            <a href=img/index>こちら</a>
+                            をご覧ください
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="center">低所得</td>
+                        <td colspan="2">市町村民税非課税世帯</td>
+                        <td class="tight">0円</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">一般①</td>
+                        <td rowspan="2">市町村民税課税世帯<br>
+                            （所得割２８万円（注）未満）
+                        </td>
+                        <td>通所施設、ホームヘルプ利用の場合</td>
+                        <td class="right">4,600円</td>
+                    </tr>
+                    <tr>
+                        <td>入居施設利用の場合</td>
+                        <td class="right">9,300円</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>一般②</td>
+                        <td colspan="2">上記以外</td>
+                        <td class="right">37,200円</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="memo">
+                ※ 収入が概ね890万円以下の世帯が対象となります。
+            </div>
+            <h4 class="caption">2.  その他</h4>
+                <div class="caption-other">
+                    おやつ代 1日50円<br>
+                    活動に関わる材料費や入場料等
+                </div>
         </div>
 
 

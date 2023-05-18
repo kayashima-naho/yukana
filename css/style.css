@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+  list-style-type: none;
+  vertical-align: baseline;
+  text-decoation: none;
+  box-sizing: border-box;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -65,7 +75,7 @@
   width: 100%;
 }
 .main__img {
-  background-image: url(../img/hoge.png);
+  background-image: url(../img/bg.png);
   background-position: center;
   background-size: cover;
   width: 1440px;
@@ -119,14 +129,17 @@
 }
 .main .content-container__title .sub {
   display: flex;
-  border-bottom: 4px solid #1387D6;
   justify-content: center;
   color: #1387D6;
   font-size: 20px;
   line-height: 100%;
   letter-spacing: 0.05em;
-  padding-bottom: 19px;
   margin-bottom: 23px;
+}
+.main .content-container__title .border {
+  border: 4.5px solid #1387D6;
+  width: 55.5px;
+  margin: 0 auto;
 }
 .main .content-container__title .heading {
   font-weight: 700;
@@ -135,7 +148,8 @@
   /* identical to box height, or 32px */
   letter-spacing: 0.05em;
   color: #333333;
-  margin-bottom: 40px;
+  margin: 23px 0 40px 0;
+  text-align: center;
 }
 .main .content-container__title .heading .part {
   color: #12BEF4;
@@ -255,18 +269,32 @@
   line-height: 190%;
   margin: 0 60px 60px 60px;
 }
-.main .background-color {
+.main .bg-color-skybule {
   width: 1440px;
   height: 985px;
   background-color: #F7FCFF;
+  margin-top: 15%;
+  padding-top: 120px;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  line-height: 100%;
-  list-style-type: none;
-  vertical-align: baseline;
-  text-decoation: none;
-  box-sizing: border-box;
+.main .bg-color-skybule .memo {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.055em;
+  color: rgba(51, 51, 51, 0.8);
+}
+.main .bg-color-skybule .caption {
+  padding-left: 170px;
+}
+.main .bg-color-skybule .caption .caption-other {
+  width: 1100px;
+  height: 110px;
+  line-height: 190%;
+  padding: 25px 35px;
+  background: #FFFFFF;
+  border-radius: 6px;
 }/*# sourceMappingURL=style.css.map */
