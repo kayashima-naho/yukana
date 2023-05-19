@@ -276,6 +276,21 @@
   margin-top: 15%;
   padding-top: 120px;
 }
+.main .bg-color-skybule table {
+  border-radius: 6px;
+  margin: 0 auto;
+}
+.main .bg-color-skybule table tr {
+  text-align: center;
+}
+.main .bg-color-skybule table tr th, .main .bg-color-skybule table tr td {
+  padding: 17px;
+  border: 1px solid #1387D6;
+}
+.main .bg-color-skybule table tr th {
+  background: #1387D6;
+  color: #fff;
+}
 .main .bg-color-skybule .memo {
   font-family: "Noto Sans JP";
   font-style: normal;
@@ -286,15 +301,19 @@
   align-items: center;
   letter-spacing: 0.055em;
   color: rgba(51, 51, 51, 0.8);
+  margin: 19px 0 60px;
 }
 .main .bg-color-skybule .caption {
   padding-left: 170px;
+  margin-bottom: 25px;
 }
 .main .bg-color-skybule .caption .caption-other {
-  width: 1100px;
+  width: 100%;
   height: 110px;
   line-height: 190%;
   padding: 25px 35px;
+  margin-top: 25px;
   background: #FFFFFF;
   border-radius: 6px;
+  color: rgba(51, 51, 51, 0.8);
 }/*# sourceMappingURL=style.css.map */
