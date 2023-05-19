@@ -192,15 +192,27 @@
         table
             border-radius: 6px
             margin: 0 auto
+            tbody > td
+                border-left: 1px solid #1387D6
+                border-top: 1px solid #1387D6
+
+            .table__item
+                vertical-align: middle
+
 
             tr
                 text-align: center
                 th, td
                     padding: 17px
-                    border: 1px solid #1387D6
+                    // border: 1px solid #1387D6
                 th
                     background: #1387D6
                     color: #fff
+                    // border: 1px solid #fff
+            // .table__last
+            //     td:nth-child(2)
+            //         border-right: none
+
         .memo
             font-family: 'Noto Sans JP'
             font-style: normal
@@ -211,12 +223,12 @@
             align-items: center
             letter-spacing: 0.055em
             color: rgba(51, 51, 51, 0.8)
-            margin: 19px 0 60px
+            margin: 19px 0 60px 170px
         .caption
             padding-left: 170px
             margin-bottom: 25px
             .caption-other
-                width: 100%
+                width: 1100px
                 height: 110px
                 line-height: 190%
                 padding: 25px 35px
@@ -224,6 +236,88 @@
                 background: #FFFFFF
                 border-radius: 6px
                 color: rgba(51, 51, 51, 0.8)
+
+
+    // ------------------------------
+.column
+    display: flex
+    justify-content: space-between
+    width: 1100px
+    height: 465px
+    .column-item
+
+        &.address
+            width: calc((100% - 60px)/2)
+            .ao
+                display: flex
+
+                .ao-item-left
+                    color: #1387D6
+                    font-family: 'Noto Sans JP'
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 300%
+                    width: 40%
+                .ao-item-right
+                    font-family: 'Noto Sans JP'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 300%
+                    width: 60%
+
+            .button
+                background: #12BEF4
+                border-radius: 6px
+                width: 515px
+                height: 80px
+                display: flex
+                align-items: center
+                justify-content: center
+                .button-text
+                    width:428px
+                    height: 45px
+                    color: #FFFFFF
+                    font-size: 22px
+                    line-height: 32px
+                    display: flex
+                    align-items: center
+                    text-align: center
+.bg-color-skyblue
+    width: 1100px
+    height: 211px
+    background: #EEF8FF
+    border-radius: 6px
+    margin: 0 auto
+    .bg-img
+        background-image: url(img/flower.png)
+        // 花の画像が効かないから後でやる
+            // 下のボタンが適用されない
+                .button
+                    background: #82C810
+                    border-radius: 6px
+                    width: 515px
+                    height: 80px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    .button-text
+                        width:428px
+                        height: 45px
+                        color: #FFFFFF
+                        font-size: 22px
+                        line-height: 32px
+                        display: flex
+                        align-items: center
+                        text-align: center
+.bg-color-mosgreen
+    width: 1100px
+    height: 211px
+    background: #F8FBF4
+    border-radius: 6px
+    margin: 0 auto
+
 
 
 
