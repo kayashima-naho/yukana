@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -73,26 +74,62 @@
   color: #82C810;
 }
 
-.menu-btn span,
-.menu-btn span:before,
-.menu-btn span:after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 25px;
-  border-radius: 3px;
-  background-color: #ffffff;
-  position: absolute;
-}
-
-.menu-btn span:before {
-  bottom: 8px;
-}
-
-.menu-btn span:after {
-  top: 8px;
-}
-
+/*ボタン内側*/
+ * .openbtn1 span
+ *  display: inline-block
+ *  background: #fff
+ *  width: 45%
+ *  height: 3px
+ *  position: absolute
+ *  left: 14px
+ *  border-radius: 2px
+ *  transition: all .4s
+ *
+ *
+ *  .openbtn1 span:nth-of-type(1)
+ *    top: 15px
+ *
+ *
+ *  .openbtn1 span:nth-of-type(2)
+ *    top: 23px
+ *
+ *
+ *  .openbtn1 span:nth-of-type(3)
+ *    top: 31px
+ *
+ *
+ *
+ *  .openbtn1.active span:nth-of-type(1)
+ *      top: 18px
+ *      left: 18px
+ *      transform: translateY(6px) rotate(-45deg)
+ *      width: 30%
+ *
+ *
+ *  .openbtn1.active span:nth-of-type(2)
+ *    opacity: 0/*真ん中の線は透過*/
+ *
+ *
+ *  .openbtn1.active span:nth-of-type(3)
+ *      top: 30px
+ *      left: 18px
+ *      transform: translateY(-6px) rotate(45deg)
+ *      width: 30%
+ *
+ *
+ *  .menu
+ *    position: fixed
+ *    z-index: 998
+ *    top: 0
+ *    left: 0
+ *    width: 100vw
+ *    height: 100vh
+ *    background: skyblue
+ *    display: none
+ *
+ *
+ *  .menu.active
+ *    display: block */
 .main {
   width: 100%;
 }
