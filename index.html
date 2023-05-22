@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- ヘッダー -->
     <header class="header">
         <div class="header__logo">
           <img src="img/logo.png" alt="logo">
@@ -35,6 +36,27 @@
             </li>
           </ul>
         </nav>
+    </header>
+    <!-- スマホサイズの時にしか見れない方にする☟ -->
+    <header>
+        <div class="hamburger-menu">
+            <input type="checkbox" id="menu-btn-check">
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        </div>
+        <!-- ハンバーガーを開いた時 -->
+        <div class="menu-content">
+            <ul>
+                <li>
+                    <a href="#">メニューリンク1</a>
+                </li>
+                <li>
+                    <a href="#">メニューリンク2</a>
+                </li>
+                <li>
+                    <a href="#">メニューリンク3</a>
+                </li>
+            </ul>
+        </div>
     </header>
     <main class="main">
         <div class="catchcopy">
@@ -129,7 +151,8 @@
                 <div class="border"></div>
                 <h2 class="heading">ご利用料金の目安</h2>
             </div>
-            <h4 class="caption">1.  月ごとの利用者負担には上限があります。</h4>
+            <div class="content-wrapper">
+                <h4 class="caption">1.  月ごとの利用者負担には上限があります。</h4>
                 <table border="1" cellpadding="6" cellspacing="0" width="1100" height="50">
                     <thead>
                         <tr>
@@ -174,6 +197,8 @@
                         ・活動に関わる材料費や入場料等
                     </div>
                 </h4>
+            </div>
+
         </div>
         <div class="content-container">
             <div class="content-container__title">
@@ -259,11 +284,13 @@
                         <div class="ao-item-left">サービス提供時間</div>
                         <div class="ao-item-right">平日:13:30 ~ 17:30 土曜日及び長期休暇:9:00～16:30</div>
                     </div>
-                    <div class="button">
-                        <p class="button-text">
-                            放課後等デイサービス Sui の活動紹介
-                            <i class="fa-regular fa-circle-play"></i>
-                        </p>
+                    <div class="button sui">
+
+                            <p class="button-text">
+                                放課後等デイサービス Sui の活動紹介
+                                <i class="fa-regular fa-circle-play"></i>
+                            </p>
+
                     </div>
                 </div>
                 <div class="column-item akusesu">

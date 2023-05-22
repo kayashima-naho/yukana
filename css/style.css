@@ -73,6 +73,26 @@
   color: #82C810;
 }
 
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+.menu-btn span:before {
+  bottom: 8px;
+}
+
+.menu-btn span:after {
+  top: 8px;
+}
+
 .main {
   width: 100%;
 }
@@ -80,7 +100,6 @@
   background-image: url(../img/bg.png);
   background-position: center;
   background-size: cover;
-  width: 1440px;
   height: 928px;
 }
 .main .top__container {
@@ -310,28 +329,33 @@
 .main .bg-color-skybule table tbody tr:last-child td:last-child {
   border-radius: 0 0 6px 0;
 }
-.main .bg-color-skybule table {
+.main .content-wrapper {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.main .content-wrapper table {
   border-radius: 6px;
   margin: 0 auto;
 }
-.main .bg-color-skybule table tbody > td {
+.main .content-wrapper table tbody > td {
   border-left: 1px solid #1387D6;
   border-top: 1px solid #1387D6;
 }
-.main .bg-color-skybule table .table__item {
+.main .content-wrapper table .table__item {
   vertical-align: middle;
 }
-.main .bg-color-skybule table tr {
+.main .content-wrapper table tr {
   text-align: center;
 }
-.main .bg-color-skybule table tr th, .main .bg-color-skybule table tr td {
+.main .content-wrapper table tr th, .main .content-wrapper table tr td {
   padding: 17px;
 }
-.main .bg-color-skybule table tr th {
+.main .content-wrapper table tr th {
   background: #1387D6;
   color: #fff;
 }
-.main .bg-color-skybule .memo {
+.main .content-wrapper .memo {
   font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 400;
@@ -341,13 +365,12 @@
   align-items: center;
   letter-spacing: 0.055em;
   color: rgba(51, 51, 51, 0.8);
-  margin: 19px 0 60px 170px;
+  margin: 19px 0 60px;
 }
-.main .bg-color-skybule .caption {
-  padding-left: 170px;
+.main .content-wrapper .caption {
   margin-bottom: 25px;
 }
-.main .bg-color-skybule .caption .caption-other {
+.main .content-wrapper .caption .caption-other {
   width: 1100px;
   height: 110px;
   line-height: 190%;
@@ -396,6 +419,9 @@
   align-items: center;
   justify-content: center;
 }
+.column .column-item.address .button.sui {
+  background: #82c810;
+}
 .column .column-item.address .button .button-text {
   width: 428px;
   height: 45px;
@@ -417,6 +443,25 @@
 .bg-color-skyblue .bg-img {
   background-image: url(img/flower.png);
   padding: 20px;
+  text-align: center;
+}
+.bg-color-skyblue .bg-img .button.sui {
+  border-radius: 6px;
+  width: 515px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #82C810;
+}
+.bg-color-skyblue .bg-img .button .button-text {
+  width: 428px;
+  height: 45px;
+  color: #FFFFFF;
+  font-size: 22px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
   text-align: center;
 }
 
