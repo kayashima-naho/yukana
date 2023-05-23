@@ -1,11 +1,10 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   line-height: 100%;
   list-style-type: none;
   vertical-align: baseline;
-  text-decoation: none;
+  text-decoration: none;
   box-sizing: border-box;
 }
 
@@ -46,10 +45,10 @@
   justify-content: space-between;
   align-items: center;
 }
-.header .item__icon {
+.header .list .item__icon {
   margin-right: 6.97px;
 }
-.header .item__tel {
+.header .list .item__tel {
   width: 109px;
   height: 50px;
   background: #EEF8FF;
@@ -62,74 +61,93 @@
   align-items: center;
   margin-right: 12px;
 }
-.header .item__number {
+.header .list .item__number {
   font-weight: 500;
   font-size: 16px;
   line-height: 125%;
 }
-.header .item__number--blue {
+.header .list .item__number--blue {
   color: #1387D6;
 }
-.header .item__number--green {
+.header .list .item__number--green {
   color: #82C810;
 }
+.header .list .item .openbtn1 {
+  position: relative;
+  background: #57a2c7;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  z-index: 999;
+}
+.header .list .item .openbtn1 span {
+  display: inline-block;
+  background: #fff;
+  width: 45%;
+  height: 3px;
+  position: absolute;
+  left: 14px;
+  border-radius: 2px;
+  transition: all 0.4s;
+}
+.header .list .item .openbtn1 span:nth-of-type(1) {
+  top: 15px;
+}
+.header .list .item .openbtn1 span:nth-of-type(2) {
+  top: 23px;
+}
+.header .list .item .openbtn1 span:nth-of-type(3) {
+  top: 31px;
+}
+.header .list .item .openbtn1.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+.header .list .item .openbtn1.active span:nth-of-type(2) {
+  opacity: 0;
+}
+.header .list .item .openbtn1.active span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+.header .list .item .openbtn1 .menu {
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: skyblue;
+  display: none;
+}
+.header .list .item .openbtn1 .menu.active {
+  display: block;
+}
+.header .header__recruit {
+  width: 60px;
+  height: 60px;
+  background: #1387D6;
+  color: #fff;
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 9px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.header .header__recruit .item__icon {
+  text-align: center;
+}
 
-/*ボタン内側*/
- * .openbtn1 span
- *  display: inline-block
- *  background: #fff
- *  width: 45%
- *  height: 3px
- *  position: absolute
- *  left: 14px
- *  border-radius: 2px
- *  transition: all .4s
- *
- *
- *  .openbtn1 span:nth-of-type(1)
- *    top: 15px
- *
- *
- *  .openbtn1 span:nth-of-type(2)
- *    top: 23px
- *
- *
- *  .openbtn1 span:nth-of-type(3)
- *    top: 31px
- *
- *
- *
- *  .openbtn1.active span:nth-of-type(1)
- *      top: 18px
- *      left: 18px
- *      transform: translateY(6px) rotate(-45deg)
- *      width: 30%
- *
- *
- *  .openbtn1.active span:nth-of-type(2)
- *    opacity: 0/*真ん中の線は透過*/
- *
- *
- *  .openbtn1.active span:nth-of-type(3)
- *      top: 30px
- *      left: 18px
- *      transform: translateY(-6px) rotate(45deg)
- *      width: 30%
- *
- *
- *  .menu
- *    position: fixed
- *    z-index: 998
- *    top: 0
- *    left: 0
- *    width: 100vw
- *    height: 100vh
- *    background: skyblue
- *    display: none
- *
- *
- *  .menu.active
- *    display: block */
 .main {
   width: 100%;
 }
@@ -140,6 +158,9 @@
   height: 928px;
 }
 .main .top__container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -206,7 +227,6 @@
   font-weight: 700;
   font-size: 32px;
   line-height: 100%;
-  /* identical to box height, or 32px */
   letter-spacing: 0.05em;
   color: #333333;
   margin: 23px 0 40px 0;
@@ -478,7 +498,7 @@
   margin: 0 auto;
 }
 .bg-color-skyblue .bg-img {
-  background-image: url(img/flower.png);
+  background-image: url(../img/flower.png);
   padding: 20px;
   text-align: center;
 }
