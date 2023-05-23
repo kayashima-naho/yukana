@@ -72,63 +72,27 @@
 .header .list .item__number--green {
   color: #82C810;
 }
-.header .list .item .openbtn1 {
-  position: relative;
-  background: #57a2c7;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  border-radius: 5px;
-  z-index: 999;
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: none;
+  }
 }
-.header .list .item .openbtn1 span {
-  display: inline-block;
-  background: #fff;
-  width: 45%;
-  height: 3px;
-  position: absolute;
-  left: 14px;
-  border-radius: 2px;
-  transition: all 0.4s;
-}
-.header .list .item .openbtn1 span:nth-of-type(1) {
-  top: 15px;
-}
-.header .list .item .openbtn1 span:nth-of-type(2) {
-  top: 23px;
-}
-.header .list .item .openbtn1 span:nth-of-type(3) {
-  top: 31px;
-}
-.header .list .item .openbtn1.active span:nth-of-type(1) {
-  top: 18px;
-  left: 18px;
-  transform: translateY(6px) rotate(-45deg);
-  width: 30%;
-}
-.header .list .item .openbtn1.active span:nth-of-type(2) {
-  opacity: 0;
-}
-.header .list .item .openbtn1.active span:nth-of-type(3) {
-  top: 30px;
-  left: 18px;
-  transform: translateY(-6px) rotate(45deg);
-  width: 30%;
-}
-.header .list .item .openbtn1 .menu {
-  position: fixed;
-  z-index: 998;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: skyblue;
+
+.sp__header {
   display: none;
 }
-.header .list .item .openbtn1 .menu.active {
-  display: block;
+@media screen and (max-width: 768px) {
+  .sp__header {
+    display: flex;
+    align-items: center;
+  }
 }
-.header .header__recruit {
+.sp__header .header__right {
+  display: flex;
+  margin: 0 0 0 auto;
+}
+.sp__header .header__right .sp__header--recruit {
   width: 60px;
   height: 60px;
   background: #1387D6;
@@ -143,9 +107,103 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.02em;
+  padding: 15px 0;
 }
-.header .header__recruit .item__icon {
+.sp__header .header__right .sp__header--recruit .sp__item__icon {
   text-align: center;
+}
+.sp__header .header__right .openbtn1 {
+  position: relative;
+  background: #12BEF4;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  z-index: 999;
+}
+.sp__header .header__right .openbtn1 span {
+  display: inline-block;
+  background: #fff;
+  width: 45%;
+  height: 3px;
+  position: absolute;
+  left: 14px;
+  border-radius: 2px;
+  transition: all 0.4s;
+}
+.sp__header .header__right .openbtn1 span:nth-of-type(1) {
+  top: 15px;
+}
+.sp__header .header__right .openbtn1 span:nth-of-type(2) {
+  top: 23px;
+}
+.sp__header .header__right .openbtn1 span:nth-of-type(3) {
+  top: 31px;
+}
+.sp__header .header__right .openbtn1 .menu {
+  color: #fff;
+}
+.sp__header .header__right .openbtn1.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+.sp__header .header__right .openbtn1.active span:nth-of-type(2) {
+  opacity: 0;
+}
+.sp__header .header__right .openbtn1.active span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+
+.sp__header--menu {
+  width: 100%;
+  height: 687px;
+  padding: 13.333vw;
+  flex-wrap: wrap;
+  background-color: #12BEF4;
+  text-align: center;
+}
+.sp__header--menu .sp__nav {
+  width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.sp__header--menu .sp__nav .sp__nav--list .item {
+  margin-bottom: 35px;
+  color: #fff;
+  font-size: 18px;
+}
+.sp__header--menu .sp__nav .sp__nav--list .recruit--info {
+  height: 13.333vw;
+  background-color: #fff;
+  color: #12BEF4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -0.015em;
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 700;
+  border-radius: 6px;
+}
+.sp__header--menu .sp__nav .sp__nav--list .contact {
+  display: block;
+  margin-top: 50px;
+}
+.sp__header--menu .sp__nav .sp__nav--list .contact .sp__text {
+  font-size: 14px;
+}
+.sp__header--menu .sp__nav .sp__nav--list .contact .span {
+  height: 30px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  font-size: 24px;
+  color: #12BEF4;
+  font-weight: 700;
+  margin-top: 15px;
 }
 
 .main {

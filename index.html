@@ -38,22 +38,25 @@
         </nav>
     </header>
     <!-- スマホサイズの時にしか見れないようにする☟ -->
-    <header class="header">
-        <div class="header__logo">
+    <header class="sp__header">
+        <div class="sp__header--logo">
             <img src="img/logo.png" alt="">
         </div>
-        <div class="header__recruit">
-            <img
-                class="item__icon fa-2x"
-                src="img/recruit.png"
-                alt="recruit icon"
-              />
-              採用情報
-        </div>
-        <div id="js-openbtn" class="openbtn1">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="header__right">
+            <div class="sp__header--recruit">
+                <img
+                    class="sp__item__icon "
+                    src="img/recruit.png"
+                    alt="recruit icon"
+                />
+                採用情報
+            </div>
+            <div id="js-openbtn" class="openbtn1">
+                <span></span>
+                <span></span>
+                <span></span>
+                <a class="menu">メニュー</a>
+            </div>
         </div>
         <!-- <p class="lead">5-2-1<br>3本線が×に</p> -->
         <!-- <div id="js-menu" class="menu"> -->
@@ -62,6 +65,28 @@
         <script src="main.js"></script>
     </header>
     <!-- スマホサイズここまで -->
+    <!-- メニューを押した時↓ -->
+    <div class="sp__header--menu openbtn1 active">
+        <nav class="sp__nav">
+            <ul class="sp__nav--list">
+                <li class="sp__nav--list item">放課後等デイサービス活動紹介</li>
+                <li class="sp__nav--list item">ご利用までの流れ</li>
+                <li class="sp__nav--list item">アクセス・営業案内</li>
+                <li class="sp__nav--list item recruit--info">採用情報</li>
+                <li class="sp__nav--list item contact">
+                    <div class="sp__text">施設についてのお問い合わせはこちらから</div>
+                    <div class="tel">TEL</div>
+                    <div class="sp__tel1">あお  097-578-7445</div>
+                    <div class="sp__tel2">Sui   097-583-3133</div>
+                    <div class="sp__time">
+                        平日 : 9:30 ~ 17:30<br>
+                        土曜日及び長期休暇： 9:00～17:00
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- メニューを押した時ここまで↑ -->
     <main class="main">
         <div class="catchcopy">
             <div class="main__img">
