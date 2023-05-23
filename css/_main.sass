@@ -9,11 +9,7 @@
         height: 928px
 
     .top__container
-        // position: absolute
-        // top: 50%
-        // left: 50%
-        // transform: translate(-50%, -50%)
-
+        @include wrapper
         height: 100%
         display: flex
         flex-direction: column
@@ -60,7 +56,6 @@
             flex-direction: column
             .sub
                 display: flex
-                // display: inline-block  要素に応じてラインの長さを変えたい
                 // border-bottom: 4px solid #1387D6
                 justify-content: center
                 color: #1387D6
@@ -76,7 +71,6 @@
                 font-weight: 700
                 font-size: 32px
                 line-height: 100%
-                /* identical to box height, or 32px */
                 letter-spacing: 0.05em
                 color: #333333
                 margin: 23px 0 40px 0
@@ -232,10 +226,6 @@
                 th
                     background: #1387D6
                     color: #fff
-                    // border: 1px solid #fff
-            // .table__last
-            //     td:nth-child(2)
-            //         border-right: none
 
         .memo
             font-family: 'Noto Sans JP'

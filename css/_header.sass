@@ -2,126 +2,108 @@
 // ーーーヘッダーーーーーーー
 
 .header
-  display: flex
-  justify-content: space-between
-  align-items: center
-  padding: 25px 35px
-  &__logo
-    width: 165px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 25px 35px
+	&__logo
+	width: 165px
 
-  &__nav
-    padding-left: 20px
-  &__list
-    display: flex
-    justify-content: space-between
-    align-items: center
-  .list
-    &__item
-      font-size: 16px
-      margin-right: 35px
-      &--recruit
-        background: #1387D6
-        color: #fff
-        padding: 14px 24px
-        border-radius: 3px
-        font-size: 16px
-        line-height: 23px
-        display: flex
-        justify-content: center
-        align-items: center
-      &--tel
+	&__nav
+	padding-left: 20px
+	&__list
+	display: flex
+	justify-content: space-between
+	align-items: center
+	.list
+	&__item
+		font-size: 16px
+		margin-right: 35px
+		&--recruit
+		background: #1387D6
+		color: #fff
+		padding: 14px 24px
+		border-radius: 3px
+		font-size: 16px
+		line-height: 23px
+		display: flex
+		justify-content: center
+		align-items: center
+		&--tel
 
-        display: flex
-        justify-content: space-between
-        align-items: center
-  .item
-    &__icon
-      margin-right: 6.97px
-    &__tel
-      width: 109px
-      height: 50px
-      background: #EEF8FF
-      padding: 16px 24px
-      border-radius: 3px
-      font-size: 11px
-      font-weight: 500
-      display: flex
-      justify-content: center
-      align-items: center
-      margin-right: 12px
-    &__number
-      font-weight: 500
-      font-size: 16px
-      line-height: 125%
-      &--blue
-        color: #1387D6
-      &--green
-        color: #82C810
-// ------ハンバーガーメニュ---------
-  .openbtn1
-    position: relative
-    background: #57a2c7
-    cursor: pointer
-    width: 50px
-    height: 50px
-    border-radius: 5px
-    z-index: 999
-
-
-/*ボタン内側*/
-  .openbtn1 span
-    display: inline-block
-    background: #fff
-    width: 45%
-    height: 3px
-    position: absolute
-    left: 14px
-    border-radius: 2px
-    transition: all .4s
-
-
-    .openbtn1 span:nth-of-type(1)
-      top: 15px
-
-
-    .openbtn1 span:nth-of-type(2)
-      top: 23px
-
-
-    .openbtn1 span:nth-of-type(3)
-      top: 31px
-
-
-
-    .openbtn1.active span:nth-of-type(1)
-        top: 18px
-        left: 18px
-        transform: translateY(6px) rotate(-45deg)
-        width: 30%
-
-
-    .openbtn1.active span:nth-of-type(2)
-      opacity: 0/*真ん中の線は透過*/
-
-
-    .openbtn1.active span:nth-of-type(3)
-        top: 30px
-        left: 18px
-        transform: translateY(-6px) rotate(45deg)
-        width: 30%
-
-
-    .menu
-      position: fixed
-      z-index: 998
-      top: 0
-      left: 0
-      width: 100vw
-      height: 100vh
-      background: skyblue
-      display: none
-
-
-    .menu.active
-      display: block
-
+		display: flex
+		justify-content: space-between
+		align-items: center
+	.item
+	&__icon
+		margin-right: 6.97px
+	&__tel
+		width: 109px
+		height: 50px
+		background: #EEF8FF
+		padding: 16px 24px
+		border-radius: 3px
+		font-size: 11px
+		font-weight: 500
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-right: 12px
+	&__number
+		font-weight: 500
+		font-size: 16px
+		line-height: 125%
+		&--blue
+		color: #1387D6
+		&--green
+		color: #82C810
+	//ハンバーガーメニュ-
+	.openbtn1
+		position: relative
+		background: #57a2c7
+		cursor: pointer
+		width: 50px
+		height: 50px
+		border-radius: 5px
+		z-index: 999
+	// ボタン内側
+		span
+			display: inline-block
+			background: #fff
+			width: 45%
+			height: 3px
+			position: absolute
+			left: 14px
+			border-radius: 2px
+			transition: all .4s
+			&:nth-of-type(1)
+				top: 15px
+			&:nth-of-type(2)
+				top: 23px
+			&:nth-of-type(3)
+				top: 31px
+		&.active
+			span
+				&:nth-of-type(1)
+					top: 18px
+					left: 18px
+					transform: translateY(6px) rotate(-45deg)
+					width: 30%
+				&:nth-of-type(2)
+					opacity: 0
+				&:nth-of-type(3)
+					top: 30px
+					left: 18px
+					transform: translateY(-6px) rotate(45deg)
+					width: 30%
+		.menu
+			position: fixed
+			z-index: 998
+			top: 0
+			left: 0
+			width: 100vw
+			height: 100vh
+			background: skyblue
+			display: none
+			&.active
+				display: block
