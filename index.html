@@ -1,373 +1,399 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>yukana</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <!-- ヘッダー -->
-    <header class="header">
-        <div class="header__logo">
-          <img src="img/logo.png" alt="logo">
-        </div>
-        <nav class="header__nav">
-          <ul class="header__list list">
-            <li class="list__item item">放課後等デイサービス活動紹介</li>
-            <li class="list__item item">ご利用までの流れ</li>
-            <li class="list__item item">アクセス・営業案内</li>
-            <li class="list__item item list__item--recruit">
-              <img
-                class="item__icon"
-                src="img/recruit.png"
-                alt="recruit icon"
-              />
-              採用情報
-            </li>
-            <li class="list__item list__item--tel item">
-              <div class="item__tel">TEL</div>
-              <div>
-                <div class="item__number item__number--blue">あお 097-578-7445</div>
-                <div class="item__number item__number--green">Sui 097-583-3133</div>
-              </div>
-            </li>
-          </ul>
-        </nav>
-    </header>
-    <!-- スマホサイズの時にしか見れないようにする☟ -->
-    <header class="sp__header">
-        <div class="sp__header--logo">
-            <img src="img/logo.png" alt="">
-        </div>
-        <div class="header__right">
-            <div class="sp__header--recruit">
-                <img
-                    class="sp__item__icon "
-                    src="img/recruit.png"
-                    alt="recruit icon"
-                />
-                採用情報
-            </div>
-            <div id="js-openbtn" class="openbtn1">
-                <span></span>
-                <span></span>
-                <span></span>
-                <a class="menu">メニュー</a>
-            </div>
-        </div>
-        <!-- <p class="lead">5-2-1<br>3本線が×に</p> -->
-        <!-- <div id="js-menu" class="menu"> -->
-            <!-- メニュー -->
-        <!-- </div> -->
-        <script src="main.js"></script>
-    </header>
-    <!-- スマホサイズここまで -->
-    <!-- メニューを押した時↓ -->
-    <div class="sp__header--menu openbtn1 active">
-        <nav class="sp__nav">
-            <ul class="sp__nav--list">
-                <li class="sp__nav--list item">放課後等デイサービス活動紹介</li>
-                <li class="sp__nav--list item">ご利用までの流れ</li>
-                <li class="sp__nav--list item">アクセス・営業案内</li>
-                <li class="sp__nav--list item recruit--info">採用情報</li>
-                <li class="sp__nav--list item contact">
-                    <div class="sp__text">施設についてのお問い合わせはこちらから</div>
-                    <div class="tel">TEL</div>
-                    <div class="sp__tel1">あお  097-578-7445</div>
-                    <div class="sp__tel2">Sui   097-583-3133</div>
-                    <div class="sp__time">
-                        平日 : 9:30 ~ 17:30<br>
-                        土曜日及び長期休暇： 9:00～17:00
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <!-- メニューを押した時ここまで↑ -->
-    <main class="main">
-        <div class="catchcopy">
-            <div class="main__img">
-                <!-- <img src="img/Mask Group.png" alt=""> -->
-                <div class="top__container">
-                    <div class="text">
-                        <div class="catchcopy__title">合同会社ゆかな(結奏)</div>
-                        <div class="catchcopy__text">ゆかなとは、人と人との結びつきが、<br>
-                            やわらかな音楽を奏でるように<br>
-                            心を和ませ穏やかな気持ちになり、<br>
-                            互いに助け合い成長しあえる仲間が集う
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="content-container">
-            <div class="content-container__title">
-                <p class="sub">news</p>
-                <div class="border"></div>
-                <h2 class="heading">新着情報のお知らせ</h2>
-            </div>
-            <div class="new">
-                <div class="img">イメージ図</div>
-                <div class="img">イメージ図</div>
-            </div>
-        </div>
-        <div class="content-container">
-            <div class="content-container__title">
-                <p class="sub">service</p>
-                <div class="border"></div>
-                <h2 class="heading">放課後等デイサービスのご紹介</h2>
-            </div>
-            <div class="image-child">
-                <img
-                class="child"
-                src="img/child.png"
-                alt="child image"
-              />
-            </div>
-        </div>
-        <div class="content-container">
-            <div class="content-container__title">
-                <h2 class="heading">
-                    <span class="part">\</span>
-                        一人ひとりの個性が宝石のように光り輝く
-                    <span class="part">/</span>
-                </h2>
-            </div>
-            <div class="content-container__outer">
-                <div class="box1">
-                    <div class="box-img">
-                        <img src="img/room.png" alt="">
-                    </div>
-                    <div class="box-title">デイサービスあお（碧）</div>
-                    <div class="box-text">碧・・・碧色をした宝石の原石。碧色の純粋感や落ち着いたイメージから、信頼と安心、そして未来への希望を持ち、一歩いっぽ歩んで欲しいという願いを込めて・・・</div>
-                    <div class="button">
-                        <p class="button-text">
-                            放課後等デイサービス あお の活動紹介
-                            <i class="fa-regular fa-circle-play"></i>
-                        </p>
-                    </div>
-                </div>
-                <div class="box2">
-                    <div class="box-img">
-                        <img src="img/room.png" alt="">
-                    </div>
-                    <div class="box-title">デイサービスSui（翠）</div>
-                    <div class="box-text">翠・・・翠色をした宝石の原石。翡翠の躍動感あるイメージから、活発で興味、探求心を持ち、毎日を生き生き楽しく過ごして欲しいという願いを込めて・・・</div>
-                    <div class="button">
-                        <p class="button-text">
-                            放課後等デイサービス Sui の活動紹介
-                            <i class="fa-regular fa-circle-play"></i>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="day-detail">
-            <h2 class="day-detail__title">
-                放課後等デイサービスとは
-            </h2>
-            <div class="day-detail__text">
-                平成２４年４月１日、障害者自立支援法・児童福祉法等の一部改正により、どの障がいの児童も共通したサービスを利用できるよう制度が一元化され、施設事業が再編されました。
-                対象児童は、小学生～高校生で各市町村が発行した通所受給者証を受給している児童になります。
-            </div>
-        </div>
-        <div class="bg-color-skybule">
-            <div class="content-container__title">
-                <p class="sub">price</p>
-                <div class="border"></div>
-                <h2 class="heading">ご利用料金の目安</h2>
-            </div>
-            <div class="content-wrapper">
-                <h4 class="caption">1.  月ごとの利用者負担には上限があります。</h4>
-                <table border="1" cellpadding="6" cellspacing="0" width="1100" height="50">
-                    <thead>
-                        <tr>
-                            <th>区分</th>
-                            <th colspan="2">世帯の収入状況</th>
-                            <th>負担上限金</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td colspan="4">ご利用者負担の詳しい内容はこちらをご覧ください。</td>
-                        </tr>
-                        <tr>
-                            <td>低所得</td>
-                            <td colspan="2">市町村民税非課税世帯</td>
-                            <td align="right">０円</td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2" class="table__item">一般①</td>
-                            <td rowspan="2" class="table__item">市町村民税課税世帯<br>
-                                （所得割２８万円（注）未満）</td>
-                            <td>通所施設、ホームヘルプ利用の場合</td>
-                            <td align="right">4,600円</td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2">入所施設利用の場合</td>
-                            <td align="right">9,300円</td>
-                        </tr>
-                        <tr class="table__last">
-                            <td>一般②</td>
-                            <td colspan="2" align="left">上記以外</td>
-                            <td align="right">37,200円</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="memo">
-                    ※ 収入が概ね890万円以下の世帯が対象となります。
-                </div>
-                <h4 class="caption">2.  その他
-                    <div class="caption-other">
-                        ・おやつ代 1日50円<br>
-                        ・活動に関わる材料費や入場料等
-                    </div>
-                </h4>
-            </div>
-
-        </div>
-        <div class="content-container">
-            <div class="content-container__title">
-                <p class="sub">Facilities</p>
-                <div class="border"></div>
-                <h2 class="heading">施設紹介・アクセス</h2>
-            </div>
-            <div class="column">
-                <div class="column-item address">
-                    <div class="ao">
-                        <div class="ao-item-left">施設名</div>
-                        <div class="ao-item-right">放課後デイサービスあお</div>
-                    </div>
-                    <div class="ao">
-                        <div class="ao-item-left">所在地</div>
-                        <div class="ao-item-right">〒879-5518 由布市挾間町北方53番クリニックビル2-A </div>
-                    </div>
-                    <div class="ao">
-                        <div class="ao-item-left">最寄駅</div>
-                        <div class="ao-item-right">向之原駅</div>
-                    </div>
-                    <div class="ao">
-                        <div class="ao-item-left">電話番号</div>
-                        <div class="ao-item-right">097-578-7445</div>
-                    </div>
-                    <div class="ao">
-                        <div class="ao-item-left">FAX</div>
-                        <div class="ao-item-right">097-578-7446</div>
-                    </div>
-                    <div class="ao">
-                        <div class="ao-item-left">営業時間</div>
-                        <div class="ao-item-right">平日 : 9:30 ~ 17:30 土曜日及び長期休暇:9:00～17:00</div>
-                    </div>
-                    <div class="ao">
-                        <div class="ao-item-left">サービス提供時間</div>
-                        <div class="ao-item-right">平日:13:30 ~ 17:30 土曜日及び長期休暇:9:00～16:30s</div>
-                    </div>
-                    <div class="button">
-                        <p class="button-text">
-                            放課後等デイサービス あお の活動紹介
-                                <i class="fa-regular fa-circle-play"></i>
-                        </p>
-                    </div>
-                </div>
-                <div class="column-item akusesu">
-                    <img src="img/thizu.png" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="bg-color-skyblue">
-            <div class="bg-img">
-                <img src="img/flower.png" alt="">
-            </div>
-        </div>
-        <div class="content-container">
-            <div class="column">
-                <div class="column-item address">
-                    <div class="ao">
-                        <div class="ao-item-left">施設名</div>
-                        <div class="ao-item-right">放課後等デイサービス Sui</div>
-                    </div>
-                    <div class="ao">
-                        <div class="ao-item-left">所在地</div>
-                        <div class="ao-item-right">〒879-5518 由布市挾間町向原308番</div>
-                    </div>
-                    <div class="ao">
-                        <div class="ao-item-left">最寄駅</div>
-                        <div class="ao-item-right">向之原駅</div>
-                    </div>
-                    <div class="ao">
-                        <div class="ao-item-left">電話番号</div>
-                        <div class="ao-item-right">097-583-3133</div>
-                    </div>
-                    <div class="ao">
-                        <div class="ao-item-left">FAX</div>
-                        <div class="ao-item-right">097-583-3134</div>
-                    </div>
-                    <div class="ao">
-                        <div class="ao-item-left">営業時間</div>
-                        <div class="ao-item-right">平日 : 9:30 ~ 17:30 土曜日及び長期休暇:9:00～17:00 平日:13:30 ~ 17:30</div>
-                    </div>
-                    <div class="ao">
-                        <div class="ao-item-left">サービス提供時間</div>
-                        <div class="ao-item-right">平日:13:30 ~ 17:30 土曜日及び長期休暇:9:00～16:30</div>
-                    </div>
-                    <div class="button sui">
-
-                            <p class="button-text">
-                                放課後等デイサービス Sui の活動紹介
-                                <i class="fa-regular fa-circle-play"></i>
-                            </p>
-
-                    </div>
-                </div>
-                <div class="column-item akusesu">
-                    <img src="img/thizu.png" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="bg-color-mosgreen">
-            <div class="bg-img">
-                <img src="img/flower.png" alt="">
-            </div>
-        </div>
-        <div class="privacy">
-            <h2 class="privacy__heading">
-                合同会社ゆかなは、個人情報保護に関する法令を遵守いたします。
-            </h2>
-            <nav class="privacy__text--nav">
-                <ul class="privacy__text--ul">
-                    <li class="privacy__text--list item">1.当サイトにおける登録・お問い合わせなどによって知り得た個人情報については、希望する情報・サービスの提供のために利用するものとし、それ以外の目的には一切使用しません。</li>
-                    <li class="privacy__text--list item">2.お問い合せなど、ご連絡を取ることがサービスの運営上必要とされるものにつきましては、ご連絡先等の必要最低限の個人情報を収集させていただきます。</li>
-                    <li class="privacy__text--list item">3.同意なしにも目的外の利用や不正に第三者に提供することはございません</li>
-                    <li class="privacy__text--list item">4.リンクについて外部リンクなどによる個人情報保護方針、及び、コンテンツについて一切責任は負いかねます。</li>
-                </ul>
-            </nav>
-        </div>
-
-
-    </main>
-    <footer class="footer">
-        <div class="footer__body">
-            <div class="footer__logo">
-                <img class="footer__logo--img" src="img/ft-logo.png" alt="logo">
-            </div>
-            <div class="footer__tel">
-                <div class="tel">TEL</div>
-                <div class="footer__ao">あお 097-578-7445 /</div>
-                <div class="footer__sui">Sui 097-583-3133</div>
-            </div>
-            <nav class="footer__nav">
-                <ul class="footer__ul">
-                    <li class="footer__list">放課後デイサービスの活動紹介</li>
-                    <li class="footer__list">ご利用までの流れ</li>
-                    <li class="footer__list">アクセス・営業案内</li>
-                    <li class="footer__list--item">採用情報</li>
-                </ul>
-            </nav>
-            <div class="footer__copy">© yukana. All rights reserved.</div>
-        </div>
-    </footer>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>yukana</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!-- ヘッダー -->
+		<header class="header">
+			<div class="header__logo">
+				<img src="img/logo.png" alt="logo" />
+			</div>
+			<nav class="header__nav">
+				<ul class="header__list list">
+					<li class="list__item item">放課後等デイサービス活動紹介</li>
+					<li class="list__item item">ご利用までの流れ</li>
+					<li class="list__item item">アクセス・営業案内</li>
+					<li class="list__item item list__item--recruit">
+						<img class="item__icon" src="img/recruit.png" alt="recruit icon" />
+						採用情報
+					</li>
+					<li class="list__item list__item--tel item">
+						<div class="item__tel">TEL</div>
+						<div>
+							<div class="item__number item__number--blue">
+								あお 097-578-7445
+							</div>
+							<div class="item__number item__number--green">
+								Sui 097-583-3133
+							</div>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- スマホサイズの時にしか見れないようにする☟ -->
+		<header class="sp__header">
+			<div class="sp__header--logo">
+				<img src="img/logo.png" alt="" />
+			</div>
+			<div class="header__right">
+				<div class="sp__header--recruit">
+					<img
+						class="sp__item__icon"
+						src="img/recruit.png"
+						alt="recruit icon"
+					/>
+					採用情報
+				</div>
+				<div id="js-openbtn" class="openbtn1">
+					<span></span>
+					<span></span>
+					<span></span>
+					<a class="menu">メニュー</a>
+				</div>
+			</div>
+			<script src="main.js"></script>
+		</header>
+		<!-- スマホサイズここまで -->
+		<!-- メニューを押した時↓ -->
+		<div class="sp__header--menu openbtn1 active">
+			<nav class="sp__nav">
+				<ul class="sp__nav--list">
+					<li class="sp__nav--list item">放課後等デイサービス活動紹介</li>
+					<li class="sp__nav--list item">ご利用までの流れ</li>
+					<li class="sp__nav--list item">アクセス・営業案内</li>
+					<li class="sp__nav--list item recruit--info">採用情報</li>
+					<li class="sp__nav--list item contact">
+						<div class="sp__text">施設についてのお問い合わせはこちらから</div>
+						<div class="tel">TEL</div>
+						<div class="sp__tel1">あお 097-578-7445</div>
+						<div class="sp__tel2">Sui 097-583-3133</div>
+						<div class="sp__time">
+							平日 : 9:30 ~ 17:30<br />
+							土曜日及び長期休暇： 9:00～17:00
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- メニューを押した時ここまで↑ -->
+		<main class="main">
+			<div class="catchcopy">
+				<div class="main__img">
+					<!-- <img src="img/Mask Group.png" alt=""> -->
+					<div class="top__container">
+						<div class="text">
+							<div class="catchcopy__title">合同会社ゆかな(結奏)</div>
+							<div class="catchcopy__text">
+								ゆかなとは、人と人との結びつきが、<br />
+								やわらかな音楽を奏でるように<br />
+								心を和ませ穏やかな気持ちになり、<br />
+								互いに助け合い成長しあえる仲間が集う
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content-container">
+				<div class="content-container__title">
+					<p class="sub">news</p>
+					<div class="border"></div>
+					<h2 class="heading">新着情報のお知らせ</h2>
+				</div>
+				<div class="new">
+					<div class="img">イメージ図</div>
+					<div class="img">イメージ図</div>
+				</div>
+			</div>
+			<div class="content-container">
+				<div class="content-container__title">
+					<p class="sub">service</p>
+					<div class="border"></div>
+					<h2 class="heading">放課後等デイサービスのご紹介</h2>
+				</div>
+				<div class="image-child">
+					<img class="child" src="img/child.png" alt="child image" />
+				</div>
+			</div>
+			<div class="content-container">
+				<div class="content-container__title">
+					<h2 class="heading">
+						<span class="part">\</span>
+						一人ひとりの個性が宝石のように光り輝く
+						<span class="part">/</span>
+					</h2>
+				</div>
+				<div class="content-container__outer">
+					<div class="box1">
+						<div class="box-img">
+							<img src="img/room.png" alt="" />
+						</div>
+						<div class="box-title">デイサービスあお（碧）</div>
+						<div class="box-text">
+							碧・・・碧色をした宝石の原石。碧色の純粋感や落ち着いたイメージから、信頼と安心、そして未来への希望を持ち、一歩いっぽ歩んで欲しいという願いを込めて・・・
+						</div>
+						<div class="button">
+							<p class="button-text">
+								放課後等デイサービス あお の活動紹介
+								<i class="fa-regular fa-circle-play"></i>
+							</p>
+						</div>
+					</div>
+					<div class="box2">
+						<div class="box-img">
+							<img src="img/room.png" alt="" />
+						</div>
+						<div class="box-title">デイサービスSui（翠）</div>
+						<div class="box-text">
+							翠・・・翠色をした宝石の原石。翡翠の躍動感あるイメージから、活発で興味、探求心を持ち、毎日を生き生き楽しく過ごして欲しいという願いを込めて・・・
+						</div>
+						<div class="button">
+							<p class="button-text">
+								放課後等デイサービス Sui の活動紹介
+								<i class="fa-regular fa-circle-play"></i>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="day-detail">
+				<h2 class="day-detail__title">放課後等デイサービスとは</h2>
+				<div class="day-detail__text">
+					平成２４年４月１日、障害者自立支援法・児童福祉法等の一部改正により、どの障がいの児童も共通したサービスを利用できるよう制度が一元化され、施設事業が再編されました。
+					対象児童は、小学生～高校生で各市町村が発行した通所受給者証を受給している児童になります。
+				</div>
+			</div>
+			<div class="bg-color-skybule">
+				<div class="content-container__title">
+					<p class="sub">price</p>
+					<div class="border"></div>
+					<h2 class="heading">ご利用料金の目安</h2>
+				</div>
+				<div class="content-wrapper">
+					<h4 class="caption">1. 月ごとの利用者負担には上限があります。</h4>
+					<table
+						border="1"
+						cellpadding="6"
+						cellspacing="0"
+						width="1100"
+						height="50"
+					>
+						<thead>
+							<tr>
+								<th>区分</th>
+								<th colspan="2">世帯の収入状況</th>
+								<th>負担上限金</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan="4">
+									ご利用者負担の詳しい内容はこちらをご覧ください。
+								</td>
+							</tr>
+							<tr>
+								<td>低所得</td>
+								<td colspan="2">市町村民税非課税世帯</td>
+								<td align="right">０円</td>
+							</tr>
+							<tr>
+								<td rowspan="2" class="table__item">一般①</td>
+								<td rowspan="2" class="table__item">
+									市町村民税課税世帯<br />
+									（所得割２８万円（注）未満）
+								</td>
+								<td>通所施設、ホームヘルプ利用の場合</td>
+								<td align="right">4,600円</td>
+							</tr>
+							<tr>
+								<td rowspan="2">入所施設利用の場合</td>
+								<td align="right">9,300円</td>
+							</tr>
+							<tr class="table__last">
+								<td>一般②</td>
+								<td colspan="2" align="left">上記以外</td>
+								<td align="right">37,200円</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="memo">
+						※ 収入が概ね890万円以下の世帯が対象となります。
+					</div>
+					<h4 class="caption">
+						2. その他
+						<div class="caption-other">
+							・おやつ代 1日50円<br />
+							・活動に関わる材料費や入場料等
+						</div>
+					</h4>
+				</div>
+			</div>
+			<div class="content-container">
+				<div class="content-container__title">
+					<p class="sub">Facilities</p>
+					<div class="border"></div>
+					<h2 class="heading">施設紹介・アクセス</h2>
+				</div>
+				<div class="column">
+					<div class="column-item address">
+						<div class="ao">
+							<div class="ao-item-left">施設名</div>
+							<div class="ao-item-right">放課後デイサービスあお</div>
+						</div>
+						<div class="ao">
+							<div class="ao-item-left">所在地</div>
+							<div class="ao-item-right">
+								〒879-5518 由布市挾間町北方53番クリニックビル2-A
+							</div>
+						</div>
+						<div class="ao">
+							<div class="ao-item-left">最寄駅</div>
+							<div class="ao-item-right">向之原駅</div>
+						</div>
+						<div class="ao">
+							<div class="ao-item-left">電話番号</div>
+							<div class="ao-item-right">097-578-7445</div>
+						</div>
+						<div class="ao">
+							<div class="ao-item-left">FAX</div>
+							<div class="ao-item-right">097-578-7446</div>
+						</div>
+						<div class="ao">
+							<div class="ao-item-left">営業時間</div>
+							<div class="ao-item-right">
+								平日 : 9:30 ~ 17:30 土曜日及び長期休暇:9:00～17:00
+							</div>
+						</div>
+						<div class="ao">
+							<div class="ao-item-left">サービス提供時間</div>
+							<div class="ao-item-right">
+								平日:13:30 ~ 17:30 土曜日及び長期休暇:9:00～16:30s
+							</div>
+						</div>
+						<div class="button">
+							<p class="button-text">
+								放課後等デイサービス あお の活動紹介
+								<i class="fa-regular fa-circle-play"></i>
+							</p>
+						</div>
+					</div>
+					<div class="column-item akusesu">
+						<img src="img/thizu.png" alt="" />
+					</div>
+				</div>
+			</div>
+			<div class="bg-color-skyblue">
+				<div class="bg-img">
+					<img src="img/flower.png" alt="" />
+				</div>
+			</div>
+			<div class="content-container">
+				<div class="column">
+					<div class="column-item address">
+						<div class="ao">
+							<div class="ao-item-left">施設名</div>
+							<div class="ao-item-right">放課後等デイサービス Sui</div>
+						</div>
+						<div class="ao">
+							<div class="ao-item-left">所在地</div>
+							<div class="ao-item-right">〒879-5518 由布市挾間町向原308番</div>
+						</div>
+						<div class="ao">
+							<div class="ao-item-left">最寄駅</div>
+							<div class="ao-item-right">向之原駅</div>
+						</div>
+						<div class="ao">
+							<div class="ao-item-left">電話番号</div>
+							<div class="ao-item-right">097-583-3133</div>
+						</div>
+						<div class="ao">
+							<div class="ao-item-left">FAX</div>
+							<div class="ao-item-right">097-583-3134</div>
+						</div>
+						<div class="ao">
+							<div class="ao-item-left">営業時間</div>
+							<div class="ao-item-right">
+								平日 : 9:30 ~ 17:30 土曜日及び長期休暇:9:00～17:00 平日:13:30 ~
+								17:30
+							</div>
+						</div>
+						<div class="ao">
+							<div class="ao-item-left">サービス提供時間</div>
+							<div class="ao-item-right">
+								平日:13:30 ~ 17:30 土曜日及び長期休暇:9:00～16:30
+							</div>
+						</div>
+						<div class="button sui">
+							<p class="button-text">
+								放課後等デイサービス Sui の活動紹介
+								<i class="fa-regular fa-circle-play"></i>
+							</p>
+						</div>
+					</div>
+					<div class="column-item akusesu">
+						<img src="img/thizu.png" alt="" />
+					</div>
+				</div>
+			</div>
+			<div class="bg-color-mosgreen">
+				<div class="bg-img">
+					<img src="img/flower.png" alt="" />
+				</div>
+			</div>
+			<div class="privacy">
+				<h2 class="privacy__heading">
+					合同会社ゆかなは、個人情報保護に関する法令を遵守いたします。
+				</h2>
+				<nav class="privacy__text--nav">
+					<ul class="privacy__text--ul">
+						<li class="privacy__text--list item">
+							1.当サイトにおける登録・お問い合わせなどによって知り得た個人情報については、希望する情報・サービスの提供のために利用するものとし、それ以外の目的には一切使用しません。
+						</li>
+						<li class="privacy__text--list item">
+							2.お問い合せなど、ご連絡を取ることがサービスの運営上必要とされるものにつきましては、ご連絡先等の必要最低限の個人情報を収集させていただきます。
+						</li>
+						<li class="privacy__text--list item">
+							3.同意なしにも目的外の利用や不正に第三者に提供することはございません
+						</li>
+						<li class="privacy__text--list item">
+							4.リンクについて外部リンクなどによる個人情報保護方針、及び、コンテンツについて一切責任は負いかねます。
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__body">
+				<div class="footer__logo">
+					<img class="footer__logo--img" src="img/ft-logo.png" alt="logo" />
+				</div>
+				<div class="footer__tel">
+					<div class="tel">TEL</div>
+					<div class="footer__ao">あお 097-578-7445 /</div>
+					<div class="footer__sui">Sui 097-583-3133</div>
+				</div>
+				<nav class="footer__nav">
+					<ul class="footer__ul">
+						<li class="footer__list">放課後デイサービスの活動紹介</li>
+						<li class="footer__list">ご利用までの流れ</li>
+						<li class="footer__list">アクセス・営業案内</li>
+						<li class="footer__list--item">採用情報</li>
+					</ul>
+				</nav>
+				<div class="footer__copy">© yukana. All rights reserved.</div>
+			</div>
+		</footer>
+	</body>
 </html>
