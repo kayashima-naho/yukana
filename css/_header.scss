@@ -1,6 +1,12 @@
 // ーーーヘッダーーーーーーー
 
 .header {
+	width: 100%;
+	background-color: #fff;
+	height: 96px;
+	position: fixed;
+	top: 0;
+	z-index: 10;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -111,12 +117,28 @@
 		}
 		.openbtn1 {
 			position: relative;
+
 			background: #12bef4;
+			color: #fff;
 			cursor: pointer;
 			width: 60px;
 			height: 60px;
 			z-index: 999;
-			// ボタン内側
+			p {
+				font-weight: 500;
+				font-size: 9px;
+				text-align: center;
+				position: absolute;
+				bottom: 10px;
+				width: 100%;
+			}
+			// メニューが見えている
+			.menu-btn {
+				display: block;
+			}
+			.menu-close {
+				display: none;
+			}
 			span {
 				display: inline-block;
 				background: #fff;
@@ -144,34 +166,134 @@
 				right: 12px;
 			}
 			&.active {
-				span {
-					&:nth-of-type(1) {
-						top: 18px;
-						left: 18px;
-						transform: translateY(6px) rotate(-45deg);
-						width: 30%;
+				.menu-close {
+					display: block;
+				}
+				@include mq(sp) {
+					.menu-btn {
+						display: none;
+						.sp__header--menu {
+							width: 100%;
+							height: calc(100% - 60px);
+							padding: 13.333vw;
+							flex-wrap: wrap;
+							background-color: #12bef4;
+							text-align: center;
+							transition: 0.3s ease-in-out;
+							display: none;
+
+							.sp__nav {
+								width: 100%;
+								margin: 0 auto;
+								flex-wrap: wrap;
+								.sp__nav--list {
+									.item {
+										margin-bottom: 35px;
+										color: #fff;
+										font-size: 18px;
+										font-weight: 700;
+									}
+									.recruit--info {
+										height: 13.333vw;
+										background-color: #fff;
+										color: #12bef4;
+										display: flex;
+										justify-content: center;
+										align-items: center;
+										letter-spacing: -0.015em;
+										font-family: "Noto Sans JP";
+										font-style: normal;
+										font-weight: 700;
+										border-radius: 6px;
+									}
+									.contact {
+										display: block;
+
+										margin-top: 50px;
+										.sp__text {
+											font-size: 14px;
+										}
+										.tel {
+											height: 30px;
+											background: #ffffff;
+											border-radius: 6px;
+											font-size: 24px;
+											color: #12bef4;
+											font-weight: 700;
+											margin: 15px 0 10px 0;
+											font-size: 15px;
+											padding: 7px;
+										}
+										.sp__tel1 {
+											font-family: "Noto Sans JP";
+											font-style: normal;
+											font-weight: 700;
+											font-size: 18px;
+											line-height: 28px;
+											align-items: center;
+											letter-spacing: 0.085em;
+										}
+										.sp__tel2 {
+											font-family: "Noto Sans JP";
+											font-style: normal;
+											font-weight: 700;
+											font-size: 18px;
+											line-height: 28px;
+											align-items: center;
+											letter-spacing: 0.085em;
+										}
+										.sp__time {
+											font-family: "Noto Sans JP";
+											font-style: normal;
+											font-weight: 500;
+											font-size: 14px;
+											line-height: 30px;
+											text-align: center;
+											letter-spacing: 0.055em;
+											padding: 10px;
+										}
+									}
+								}
+							}
+						}
 					}
-					&:nth-of-type(2) {
-						opacity: 0;
-					}
-					&:nth-of-type(3) {
-						top: 30px;
-						left: 18px;
-						transform: translateY(-6px) rotate(45deg);
-						width: 30%;
+				} //pcheaderのときの幅でスマホheaderいりません
+
+				& > span {
+					@include mq(sp) {
+						&:nth-of-type(1) {
+							top: 18px;
+							left: 18px;
+							transform: translateY(6px) rotate(-45deg);
+							width: 30%;
+						}
+						&:nth-of-type(2) {
+							opacity: 0;
+						}
+						&:nth-of-type(3) {
+							top: 30px;
+							left: 18px;
+							transform: translateY(-6px) rotate(45deg);
+							width: 30%;
+						}
 					}
 				}
 			}
 		}
 	}
 }
+
+// メニュー押した時に表示させたいところ
 .sp__header--menu {
 	width: 100%;
-	height: 687px;
+	height: calc(100% - 60px);
 	padding: 13.333vw;
 	flex-wrap: wrap;
 	background-color: #12bef4;
 	text-align: center;
+	transition: 0.3s ease-in-out;
+	display: none;
+
 	.sp__nav {
 		width: 100%;
 		margin: 0 auto;
@@ -229,7 +351,6 @@
 					font-weight: 700;
 					font-size: 18px;
 					line-height: 28px;
-
 					align-items: center;
 					letter-spacing: 0.085em;
 				}

@@ -8,7 +8,17 @@
   box-sizing: border-box;
 }
 
+.img {
+  max-width: 100%;
+}
+
 .header {
+  width: 100%;
+  background-color: #fff;
+  height: 96px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -119,10 +129,25 @@
 .sp__header .header__right .openbtn1 {
   position: relative;
   background: #12bef4;
+  color: #fff;
   cursor: pointer;
   width: 60px;
   height: 60px;
   z-index: 999;
+}
+.sp__header .header__right .openbtn1 p {
+  font-weight: 500;
+  font-size: 9px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+.sp__header .header__right .openbtn1 .menu-btn {
+  display: block;
+}
+.sp__header .header__right .openbtn1 .menu-close {
+  display: none;
 }
 .sp__header .header__right .openbtn1 span {
   display: inline-block;
@@ -150,29 +175,121 @@
   bottom: 10px;
   right: 12px;
 }
-.sp__header .header__right .openbtn1.active span:nth-of-type(1) {
-  top: 18px;
-  left: 18px;
-  transform: translateY(6px) rotate(-45deg);
-  width: 30%;
+.sp__header .header__right .openbtn1.active .menu-close {
+  display: block;
 }
-.sp__header .header__right .openbtn1.active span:nth-of-type(2) {
-  opacity: 0;
+@media screen and (max-width: 768px) {
+  .sp__header .header__right .openbtn1.active .menu-btn {
+    display: none;
+  }
+  .sp__header .header__right .openbtn1.active .menu-btn .sp__header--menu {
+    width: 100%;
+    height: calc(100% - 60px);
+    padding: 13.333vw;
+    flex-wrap: wrap;
+    background-color: #12bef4;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    display: none;
+  }
+  .sp__header .header__right .openbtn1.active .menu-btn .sp__header--menu .sp__nav {
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .sp__header .header__right .openbtn1.active .menu-btn .sp__header--menu .sp__nav .sp__nav--list .item {
+    margin-bottom: 35px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .sp__header .header__right .openbtn1.active .menu-btn .sp__header--menu .sp__nav .sp__nav--list .recruit--info {
+    height: 13.333vw;
+    background-color: #fff;
+    color: #12bef4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: -0.015em;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    border-radius: 6px;
+  }
+  .sp__header .header__right .openbtn1.active .menu-btn .sp__header--menu .sp__nav .sp__nav--list .contact {
+    display: block;
+    margin-top: 50px;
+  }
+  .sp__header .header__right .openbtn1.active .menu-btn .sp__header--menu .sp__nav .sp__nav--list .contact .sp__text {
+    font-size: 14px;
+  }
+  .sp__header .header__right .openbtn1.active .menu-btn .sp__header--menu .sp__nav .sp__nav--list .contact .tel {
+    height: 30px;
+    background: #ffffff;
+    border-radius: 6px;
+    font-size: 24px;
+    color: #12bef4;
+    font-weight: 700;
+    margin: 15px 0 10px 0;
+    font-size: 15px;
+    padding: 7px;
+  }
+  .sp__header .header__right .openbtn1.active .menu-btn .sp__header--menu .sp__nav .sp__nav--list .contact .sp__tel1 {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    align-items: center;
+    letter-spacing: 0.085em;
+  }
+  .sp__header .header__right .openbtn1.active .menu-btn .sp__header--menu .sp__nav .sp__nav--list .contact .sp__tel2 {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    align-items: center;
+    letter-spacing: 0.085em;
+  }
+  .sp__header .header__right .openbtn1.active .menu-btn .sp__header--menu .sp__nav .sp__nav--list .contact .sp__time {
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.055em;
+    padding: 10px;
+  }
 }
-.sp__header .header__right .openbtn1.active span:nth-of-type(3) {
-  top: 30px;
-  left: 18px;
-  transform: translateY(-6px) rotate(45deg);
-  width: 30%;
+@media screen and (max-width: 768px) {
+  .sp__header .header__right .openbtn1.active > span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+  }
+  .sp__header .header__right .openbtn1.active > span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .sp__header .header__right .openbtn1.active > span:nth-of-type(3) {
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+  }
 }
 
 .sp__header--menu {
   width: 100%;
-  height: 687px;
+  height: calc(100% - 60px);
   padding: 13.333vw;
   flex-wrap: wrap;
   background-color: #12bef4;
   text-align: center;
+  transition: 0.3s ease-in-out;
+  display: none;
 }
 .sp__header--menu .sp__nav {
   width: 100%;
@@ -265,11 +382,21 @@
   text-align: center;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .main .top__container {
+    width: 90%;
+  }
+}
 .main .top__container .text {
   width: 1100px;
   height: 518px;
   background: rgba(255, 255, 255, 0.85);
   border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .main .top__container .text {
+    width: 100%;
+  }
 }
 .main .catchcopy__title {
   font-size: 50px;
@@ -302,9 +429,24 @@
   align-items: center;
   flex-direction: column;
 }
+@media screen and (max-width: 768px) {
+  .main .content-container {
+    width: 100%;
+  }
+}
 .main .content-container__title {
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .main .content-container__title {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main .content-container__title .image-child .child {
+    width: 100%;
+  }
 }
 .main .content-container__title .sub {
   display: flex;
@@ -335,6 +477,12 @@
 .main .content-container .new {
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .main .content-container .new {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+}
 .main .content-container .new .img {
   width: 510px;
   height: 510px;
@@ -345,8 +493,18 @@
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .main .content-container__outer {
+    width: 100%;
+  }
+}
 .main .content-container__outer .box1 {
   width: 526px;
+}
+@media screen and (max-width: 768px) {
+  .main .content-container__outer .box1 {
+    width: 100%;
+  }
 }
 .main .content-container__outer .box1 .box-img {
   width: 514px;
@@ -434,6 +592,17 @@
   border-radius: 6px;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .main .day-detail {
+    width: 100%;
+    padding: 9.067vw 5.333vw;
+    font-family: "Noto Sans JP";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.0075em;
+  }
+}
 .main .day-detail__title {
   font-size: 30px;
   line-height: 34px;
@@ -492,6 +661,11 @@
   border-radius: 6px;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .main .content-wrapper table {
+    width: 100%;
+  }
+}
 .main .content-wrapper table tbody > td {
   border-left: 1px solid #1387d6;
   border-top: 1px solid #1387d6;
@@ -541,6 +715,11 @@
   justify-content: space-between;
   width: 1100px;
   height: 465px;
+}
+@media screen and (max-width: 768px) {
+  .column {
+    width: 100%;
+  }
 }
 .column .column-item.address {
   width: calc((100% - 60px) / 2);
@@ -595,10 +774,20 @@
   border-radius: 6px;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .bg-color-skyblue {
+    width: 100%;
+  }
+}
 .bg-color-skyblue .bg-img {
   background-image: url(../img/flower.png);
   padding: 20px;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .bg-color-skyblue .bg-img {
+    width: 100%;
+  }
 }
 .bg-color-skyblue .bg-img .button.sui {
   border-radius: 6px;
@@ -631,6 +820,11 @@
   padding: 20px;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .bg-color-mosgreen .bg-img {
+    width: 100%;
+  }
+}
 
 .privacy {
   width: 1100px;
@@ -639,6 +833,11 @@
   padding: 50px;
   border: 2px solid #1387d6;
   border-radius: 6px;
+}
+@media screen and (max-width: 768px) {
+  .privacy {
+    width: 100%;
+  }
 }
 .privacy .privacy__heading {
   font-family: "Noto Sans JP";
