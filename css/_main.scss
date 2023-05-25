@@ -6,6 +6,10 @@
 		background-position: center;
 		background-size: cover;
 		height: 928px;
+		@include mq(sp) {
+			width: 100%;
+			height: 338px;
+		}
 	}
 	.top__container {
 		@include wrapper;
@@ -25,6 +29,7 @@
 			border-radius: 10px;
 			@include mq(sp) {
 				width: 100%;
+				margin: 9.333333333333334vw 0;
 			}
 		}
 	}
@@ -37,13 +42,17 @@
 			font-weight: bold;
 			margin-bottom: 35px;
 			padding: 30px;
+			@include mq(sp) {
+				width: 100%;
+				font-size: 6.4vw;
+				margin-bottom: 5.42%;
+			}
 			.child {
 				width: 100%;
 			}
 		}
 		&__text {
 			line-height: 180%;
-			/* or 61px */
 			display: flex;
 			align-items: center;
 			text-align: center;
@@ -52,6 +61,18 @@
 			font-size: 34px;
 			font-weight: bold;
 			margin-left: 20%;
+			@include mq(sp) {
+				line-height: 180%;
+				text-align: center;
+				letter-spacing: 0.02em;
+				color: #1387d6;
+				font-weight: bold;
+				font-size: 3.733333333333334vw;
+				// margin: 0 auto;
+				justify-content: center;
+				margin: 0 auto;
+				line-height: 190%;
+			}
 		}
 	}
 	.content-container {
@@ -69,8 +90,9 @@
 			flex-direction: column;
 			@include mq(sp) {
 				width: 100%;
+				margin-bottom: 7%;
 			}
-			// 画像がスマホ対応にならない
+			// 画像がスマホ対応にならないなぜ・・後で調べる
 			.image-child {
 				.child {
 					@include mq(sp) {
@@ -88,11 +110,20 @@
 				line-height: 100%;
 				letter-spacing: 0.05em;
 				margin-bottom: 23px;
+				@include mq(sp) {
+					font-size: 3.733333333333334vw;
+					margin-bottom: 2.6%;
+					font-weight: 700;
+				}
 			}
 			.border {
 				border: 4.5px solid #1387d6;
 				width: 55.5px;
 				margin: 0 auto;
+				@include mq(sp) {
+					wdith: 14.799999999999999vw;
+					border: 0.6399999999999999vw solid #1387d6;
+				}
 			}
 			.heading {
 				font-weight: 700;
@@ -102,8 +133,14 @@
 				color: #333333;
 				margin: 23px 0 40px 0;
 				text-align: center;
+				@include mq(sp) {
+					font-size: 5.333333333333334vw;
+					margin: 2.596% 0 0 0;
+				}
 				.part {
 					color: #12bef4;
+					@include mq(sp) {
+					}
 				}
 			}
 		}
@@ -118,22 +155,29 @@
 				height: 510px;
 				background-color: green;
 				margin: 20px auto;
+				@include mq(sp) {
+					margin: 6.7% 4.5% 6.2% 4.5%;
+				}
 			}
 		}
 		&__outer {
 			display: flex;
 			justify-content: space-between;
 			@include mq(sp) {
-				width: 100%;
+				width: 90%;
+				flex-wrap: wrap;
 			}
 			.box1 {
 				width: 526px;
 				@include mq(sp) {
-					width: 100%;
+					width: 90%;
 				}
 				.box-img {
 					width: 514px;
 					height: 230px;
+					@include mq(sp) {
+						width: 90%;
+					}
 				}
 				.box-title {
 					font-weight: 700;
@@ -142,6 +186,9 @@
 					letter-spacing: 0.0075em;
 					color: #333333;
 					margin: 21px 10px 0 0;
+					@include mq(sp) {
+						width: 90%;
+					}
 				}
 				.box-text {
 					font-size: 16px;
@@ -157,6 +204,9 @@
 					display: flex;
 					align-items: center;
 					justify-content: center;
+					@include mq(sp) {
+						width: 90%;
+					}
 					.button-text {
 						width: 428px;
 						height: 45px;
@@ -166,6 +216,9 @@
 						display: flex;
 						align-items: center;
 						text-align: center;
+						@include mq(sp) {
+							width: 90%;
+						}
 					}
 				}
 			}
@@ -175,6 +228,9 @@
 				.box-img {
 					width: 514px;
 					height: 230px;
+					@include mq(sp) {
+						width: 90%;
+					}
 				}
 				.box-title {
 					font-weight: 700;
@@ -183,12 +239,18 @@
 					letter-spacing: 0.0075em;
 					color: #333333;
 					margin: 21px 10px 0 0;
+					@include mq(sp) {
+						width: 90%;
+					}
 				}
 				.box-text {
 					font-size: 16px;
 					line-height: 30px;
 					/* or 188% */
 					letter-spacing: 0.0075em;
+					@include mq(sp) {
+						width: 90%;
+					}
 				}
 				.button {
 					background: #82c810;
@@ -198,6 +260,9 @@
 					display: flex;
 					align-items: center;
 					justify-content: center;
+					@include mq(sp) {
+						width: 90%;
+					}
 					.button-text {
 						width: 428px;
 						height: 45px;
@@ -207,6 +272,9 @@
 						display: flex;
 						align-items: center;
 						text-align: center;
+						@include mq(sp) {
+							width: 90%;
+						}
 					}
 				}
 			}
@@ -220,8 +288,8 @@
 		border-radius: 6px;
 		margin: 0 auto;
 		@include mq(sp) {
-			width: 100%;
-			padding: 9.067vw 5.333vw;
+			width: 90%;
+			padding: 9.4% 5.5%; /*取った方がうまくいく？いや違う*/
 			font-family: "Noto Sans JP";
 			font-style: normal;
 			font-weight: 700;
@@ -235,11 +303,19 @@
 			color: #1387d6;
 			text-align: center;
 			margin: 60px 0 30px 0;
+			@include mq(sp) {
+				font-size: 5.333333333333334vw;
+				margin: 0 auto;
+			}
 		}
 		&__text {
 			font-size: 18px;
 			line-height: 190%;
 			margin: 0 60px 60px 60px;
+			@include mq(sp) {
+				font-size: 3.733333333333334vw;
+				font-weight: normal;
+			}
 		}
 	}
 	.bg-color-skybule {

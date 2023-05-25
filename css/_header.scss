@@ -86,6 +86,7 @@
 	@include mq(sp) {
 		display: flex;
 		align-items: center;
+		margin-left: 5.333333333333334vw;
 	}
 	.sp__header--logo {
 		height: 18px;
@@ -257,7 +258,7 @@
 							}
 						}
 					}
-				} //pcheaderのときの幅でスマホheaderいりません
+				}
 
 				& > span {
 					@include mq(sp) {
@@ -287,83 +288,89 @@
 .sp__header--menu {
 	width: 100%;
 	height: calc(100% - 60px);
-	padding: 13.333vw;
+	padding: 16%;
 	flex-wrap: wrap;
 	background-color: #12bef4;
 	text-align: center;
 	transition: 0.3s ease-in-out;
-	display: none;
+	display: none; /*メニュー押す前は表示しませんよ*/
+	&.active {
+		/*メニュー押した時にページが出てくるコードactiveで出てくる*/
+		display: block;
+		height: calc(
+			100vh - 60px
+		); /*スマホサイズの時メニューを開いた時のが画面いっぱいの時に使う*/
+	}
+}
 
-	.sp__nav {
-		width: 100%;
-		margin: 0 auto;
-		flex-wrap: wrap;
-		.sp__nav--list {
-			.item {
-				margin-bottom: 35px;
-				color: #fff;
-				font-size: 18px;
-				font-weight: 700;
+.sp__nav {
+	width: 100%;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	.sp__nav--list {
+		.item {
+			margin-bottom: 15%;
+			color: #fff;
+			font-size: 4.8vw;
+			font-weight: 700;
+		}
+		.recruit--info {
+			height: 13.333vw;
+			background-color: #fff;
+			color: #12bef4;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			letter-spacing: -0.015em;
+			font-family: "Noto Sans JP";
+			font-style: normal;
+			font-weight: 700;
+			border-radius: 6px;
+		}
+		.contact {
+			display: block;
+			margin-top: 18.6%;
+			.sp__text {
+				font-size: 3.533333333333334vw;
 			}
-			.recruit--info {
-				height: 13.333vw;
-				background-color: #fff;
+			.tel {
+				height: 8vw;
+				background: #ffffff;
+				border-radius: 6px;
+				font-size: 6.4vw;
 				color: #12bef4;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				letter-spacing: -0.015em;
+				font-weight: 700;
+				margin: 4vw 0 2.666666666666667vw 0;
+				font-size: 4vw;
+				padding: 3.64%;
+			}
+			.sp__tel1 {
 				font-family: "Noto Sans JP";
 				font-style: normal;
 				font-weight: 700;
-				border-radius: 6px;
+				font-size: 4.8vw;
+				line-height: 7.466666666666668vw;
+				align-items: center;
+				letter-spacing: 0.085em;
 			}
-			.contact {
-				display: block;
-
-				margin-top: 50px;
-				.sp__text {
-					font-size: 14px;
-				}
-				.tel {
-					height: 30px;
-					background: #ffffff;
-					border-radius: 6px;
-					font-size: 24px;
-					color: #12bef4;
-					font-weight: 700;
-					margin: 15px 0 10px 0;
-					font-size: 15px;
-					padding: 7px;
-				}
-				.sp__tel1 {
-					font-family: "Noto Sans JP";
-					font-style: normal;
-					font-weight: 700;
-					font-size: 18px;
-					line-height: 28px;
-					align-items: center;
-					letter-spacing: 0.085em;
-				}
-				.sp__tel2 {
-					font-family: "Noto Sans JP";
-					font-style: normal;
-					font-weight: 700;
-					font-size: 18px;
-					line-height: 28px;
-					align-items: center;
-					letter-spacing: 0.085em;
-				}
-				.sp__time {
-					font-family: "Noto Sans JP";
-					font-style: normal;
-					font-weight: 500;
-					font-size: 14px;
-					line-height: 30px;
-					text-align: center;
-					letter-spacing: 0.055em;
-					padding: 10px;
-				}
+			.sp__tel2 {
+				font-family: "Noto Sans JP";
+				font-style: normal;
+				font-weight: 700;
+				font-size: 4.8vw;
+				line-height: 7.466666666666668vw;
+				align-items: center;
+				letter-spacing: 0.085em;
+			}
+			.sp__time {
+				font-family: "Noto Sans JP";
+				font-style: normal;
+				font-weight: 500;
+				font-size: 3.733333333333334vw;
+				line-height: 8vw;
+				text-align: center;
+				letter-spacing: 0.055em;
+				padding: 3.8%;
 			}
 		}
 	}
