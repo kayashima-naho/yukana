@@ -180,90 +180,81 @@
 .sp__header .header__right .openbtn1.active .menu-close {
   display: block;
 }
-@media screen and (max-width: 768px) {
-  .sp__header .header__right .openbtn1.active .menu-btn {
-    display: none;
-  }
-  .sp__header .header__right .openbtn1.active .menu-btn .sp__header--menu {
-    width: 100%;
-    height: calc(100% - 60px);
-    padding: 13.333vw;
-    flex-wrap: wrap;
-    background-color: #12bef4;
-    text-align: center;
-    transition: 0.3s ease-in-out;
-    display: none;
-  }
-  .sp__header .header__right .openbtn1.active .menu-btn .sp__header--menu .sp__nav {
-    width: 100%;
-    margin: 0 auto;
-    flex-wrap: wrap;
-  }
-  .sp__header .header__right .openbtn1.active .menu-btn .sp__header--menu .sp__nav .sp__nav--list .item {
-    margin-bottom: 35px;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 700;
-  }
-  .sp__header .header__right .openbtn1.active .menu-btn .sp__header--menu .sp__nav .sp__nav--list .recruit--info {
-    height: 13.333vw;
-    background-color: #fff;
-    color: #12bef4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: -0.015em;
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 700;
-    border-radius: 6px;
-  }
-  .sp__header .header__right .openbtn1.active .menu-btn .sp__header--menu .sp__nav .sp__nav--list .contact {
-    display: block;
-    margin-top: 50px;
-  }
-  .sp__header .header__right .openbtn1.active .menu-btn .sp__header--menu .sp__nav .sp__nav--list .contact .sp__text {
-    font-size: 14px;
-  }
-  .sp__header .header__right .openbtn1.active .menu-btn .sp__header--menu .sp__nav .sp__nav--list .contact .tel {
-    height: 30px;
-    background: #ffffff;
-    border-radius: 6px;
-    font-size: 24px;
-    color: #12bef4;
-    font-weight: 700;
-    margin: 15px 0 10px 0;
-    font-size: 15px;
-    padding: 7px;
-  }
-  .sp__header .header__right .openbtn1.active .menu-btn .sp__header--menu .sp__nav .sp__nav--list .contact .sp__tel1 {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
-    align-items: center;
-    letter-spacing: 0.085em;
-  }
-  .sp__header .header__right .openbtn1.active .menu-btn .sp__header--menu .sp__nav .sp__nav--list .contact .sp__tel2 {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
-    align-items: center;
-    letter-spacing: 0.085em;
-  }
-  .sp__header .header__right .openbtn1.active .menu-btn .sp__header--menu .sp__nav .sp__nav--list .contact .sp__time {
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 30px;
-    text-align: center;
-    letter-spacing: 0.055em;
-    padding: 10px;
-  }
+.sp__header .header__right .openbtn1.active .menu-btn {
+  display: none;
+}
+.sp__header .header__right .openbtn1.active .sp__header--menu .sp__nav {
+  width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.sp__header .header__right .openbtn1.active .sp__header--menu .sp__nav .sp__nav--list {
+  margin-top: 70px;
+}
+.sp__header .header__right .openbtn1.active .sp__header--menu .sp__nav .sp__nav--list .item {
+  margin-bottom: 35px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+.sp__header .header__right .openbtn1.active .sp__header--menu .sp__nav .sp__nav--list .recruit--info {
+  height: 13.333vw;
+  background-color: #fff;
+  color: #12bef4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -0.015em;
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 700;
+  border-radius: 6px;
+}
+.sp__header .header__right .openbtn1.active .sp__header--menu .sp__nav .sp__nav--list .contact {
+  display: block;
+  margin-top: 50px;
+}
+.sp__header .header__right .openbtn1.active .sp__header--menu .sp__nav .sp__nav--list .contact .sp__text {
+  font-size: 14px;
+}
+.sp__header .header__right .openbtn1.active .sp__header--menu .sp__nav .sp__nav--list .contact .tel {
+  height: 30px;
+  background: #ffffff;
+  border-radius: 6px;
+  font-size: 24px;
+  color: #12bef4;
+  font-weight: 700;
+  margin: 15px 0 10px 0;
+  font-size: 15px;
+  padding: 7px;
+}
+.sp__header .header__right .openbtn1.active .sp__header--menu .sp__nav .sp__nav--list .contact .sp__tel1 {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  align-items: center;
+  letter-spacing: 0.085em;
+}
+.sp__header .header__right .openbtn1.active .sp__header--menu .sp__nav .sp__nav--list .contact .sp__tel2 {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  align-items: center;
+  letter-spacing: 0.085em;
+}
+.sp__header .header__right .openbtn1.active .sp__header--menu .sp__nav .sp__nav--list .contact .sp__time {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.055em;
+  padding: 10px;
 }
 @media screen and (max-width: 768px) {
   .sp__header .header__right .openbtn1.active > span:nth-of-type(1) {
@@ -291,12 +282,23 @@
   background-color: #12bef4;
   text-align: center;
   transition: 0.3s ease-in-out;
-  display: none; /*メニュー押す前は表示しませんよ*/
+  /*メニュー押す前は表示しませんよ*/
 }
 .sp__header--menu.active {
   /*メニュー押した時にページが出てくるコードactiveで出てくる*/
-  display: block;
-  height: calc(100vh - 60px); /*スマホサイズの時メニューを開いた時のが画面いっぱいの時に使う*/
+}
+@media screen and (max-width: 768px) {
+  .sp__header--menu.active {
+    display: block;
+    height: calc(100vh - 60px); /*スマホサイズの時メニューを開いた時のが画面いっぱいの時に使う*/
+    width: 100%;
+    height: calc(100% - 60px);
+    padding: 13.333vw;
+    flex-wrap: wrap;
+    background-color: #12bef4;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+  }
 }
 
 .sp__nav {
@@ -836,6 +838,7 @@
 @media screen and (max-width: 768px) {
   .column {
     width: 100%;
+    flex-wrap: wrap;
   }
 }
 .column .column-item.address {
@@ -969,6 +972,12 @@
   border-bottom: 1px solid #1387d6;
   padding-bottom: 25px;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .privacy .privacy__heading {
+    width: 100%;
+    font-size: 5.3333333333vw;
+  }
 }
 .privacy .privacy__text--nav .privacy__text--ul .privacy__text--list {
   font-family: "Noto Sans JP";

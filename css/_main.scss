@@ -425,6 +425,7 @@
 	height: 465px;
 	@include mq(sp) {
 		width: 100%;
+		flex-wrap: wrap;
 	}
 	.column-item {
 		&.address {
@@ -552,6 +553,10 @@
 		border-bottom: 1px solid #1387d6;
 		padding-bottom: 25px;
 		margin-bottom: 30px;
+		@include mq(sp) {
+			width: 100%;
+			font-size: 5.333333333333334vw;
+		}
 	}
 	.privacy__text--nav {
 		.privacy__text--ul {
